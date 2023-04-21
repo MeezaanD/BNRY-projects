@@ -1,7 +1,7 @@
 <template>
      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="nav-item" style="text-decoration: none;color: black;font-family: 'Rubik Wet Paint', cursive;" href="#">NNN</a>
+            <a class="nav-link" style="text-decoration: none;color: black;font-family: 'Rubik Wet Paint', cursive;" href="#">NNN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,6 +42,7 @@ export default {
 
 <style scoped>
 nav {
+    background-color: white;
     width: 100%;
     padding: 15px;
     border: 2px solid rgba(255, 255, 255, 0.06);
@@ -51,9 +52,16 @@ nav {
     z-index: 1;
 }
 
-.nav-item {
+.nav-link {
     font-family: 'Dongle', sans-serif;
     font-size: 35px;
+    color: black;
+}
+
+.nav-link:hover {
+    font-family: 'Dongle', sans-serif;
+    font-size: 35px;
+    color: black;
 }
 
 .btn {
@@ -65,11 +73,12 @@ nav {
     font-size: 30px;
     color: white;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 .btn:hover {
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: white;
 }
 

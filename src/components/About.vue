@@ -1,6 +1,25 @@
 <template>
     <section id="about">
+        <div class="container text-start">
+            <div class="row align-items-center">
+              <div class="col-sm-4">
+                <img class="img-fluid" style="height: 43rem;width: 60rem;" src="https://i.postimg.cc/KjGxdjfq/pexels-jumana-dakkur-4544455.jpg" alt="">
+              </div>
+              <div class="col-sm-8">
+                <h3>What to expect from us ?</h3>
+                <i class="bi bi-quote"></i><p>Welcome to News News News, your go-to source for the latest updates and breaking news from around the world. Our mission is to keep you informed and up-to-date on the most significant events and stories happening across the globe. <br><br>
 
+                    At News News News, we believe that access to accurate and timely information is essential for making informed decisions and understanding the world around us. That's why our team of experienced journalists and correspondents work tirelessly to bring you the most reliable and objective news coverage possible. <br><br>
+                    
+                    Whether it's breaking news on politics, economics, technology, entertainment, sports, or anything else, we are committed to delivering the latest and most relevant information to our readers. We pride ourselves on our comprehensive and in-depth reporting, providing you with the context and analysis you need to fully understand the events shaping our world. <br><br>
+                    
+                    Our website is updated 24/7, ensuring that you never miss a beat. From local to global news, our coverage spans the entire spectrum, so you can stay informed on everything that matters to you. <br><br>
+                    
+                    Thank you for choosing News News News as your trusted source for the latest news from around the world. We hope you find our website informative, engaging, and useful.</p>
+              </div>
+            </div>
+          </div>
+        <!--  -->
     </section>
 </template>
 
@@ -12,6 +31,19 @@ export default {
 
 <style scoped>
 #about {
-    min-height: 100vh;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px; 
+    font-weight: 700;
+  }
+
+p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 24px;
 }
 </style>
