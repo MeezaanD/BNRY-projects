@@ -68,7 +68,7 @@ nav {
     background-color: black;
     margin-left: 50px;
     margin-right: 30px;
-    padding: 10px 35px 10px 35px;
+    padding: 10px 20px 10px 20px;
     font-family: 'Dongle', sans-serif;
     font-size: 30px;
     color: white;

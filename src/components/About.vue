@@ -20,9 +20,11 @@
               </div>
             </div>
           </div>
+          <h4>Our most established Authors</h4>
+          
 
           
-        <!--  -->
+        
     </section>
 </template>
 
@@ -45,12 +47,22 @@ h3 {
     font-weight: 700;
   }
 
-p {
-    font-family: 'Dongle', sans-serif;
-    font-size: 25px;
-}
-
-h5 {
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
   text-align: center;
 }
+
+  h5 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+
+p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+}
+
 </style>
