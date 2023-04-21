@@ -1,9 +1,10 @@
 <template>
     <section id="about">
+      <h5>About</h5>
         <div class="container text-start">
-            <div class="row align-items-center">
+            <div class="row align-items-start">
               <div class="col-sm-4">
-                <img class="img-fluid" style="height: 43rem;width: 60rem;" src="https://i.postimg.cc/KjGxdjfq/pexels-jumana-dakkur-4544455.jpg" alt="">
+                <img class="img-fluid" style="height: 48rem;width: 60rem;box-shadow: 0 5px 5px rgba(21, 48, 66, 0.5);" src="https://i.postimg.cc/KjGxdjfq/pexels-jumana-dakkur-4544455.jpg" alt="">
               </div>
               <div class="col-sm-8">
                 <h3>What to expect from us ?</h3>
@@ -19,6 +20,8 @@
               </div>
             </div>
           </div>
+
+          
         <!--  -->
     </section>
 </template>
@@ -44,6 +47,10 @@ h3 {
 
 p {
     font-family: 'Dongle', sans-serif;
-    font-size: 24px;
+    font-size: 25px;
+}
+
+h5 {
+  text-align: center;
 }
 </style>

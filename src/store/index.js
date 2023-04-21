@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
-const bnry = "https://newsapi.org/v2/everything?q=apple&from=2023-04-19&to=2023-04-19&sortBy=popularity&apiKey=452d05bf6c4d4555874a25c54fd797fa"
+const bnry = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=452d05bf6c4d4555874a25c54fd797fa"
 
 export default createStore({
   state: {

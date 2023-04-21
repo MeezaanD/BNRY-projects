@@ -1,7 +1,7 @@
 <template>
     <section id="home">
         <div class="container">
-          <h1>News News News</h1>
+          <h1 style="font-family: 'Rubik Wet Paint', cursive;">News News News</h1>
           <h3>Discover the latest things happening in the world right now.</h3>
           <a href="#about" class="btn">Get started</a>
         </div>
@@ -28,9 +28,9 @@ h1 {
   width: 468px;
   height: 49px;
   left: 1080px;
-  top: 30px;
+  top: 35px;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: lighter; 
 }
 h3 {
