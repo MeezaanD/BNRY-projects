@@ -4,12 +4,12 @@
         <div class="col-sm-6">
           <img src="https://i.postimg.cc/R0t7yxFp/pexels-mikhail-nilov-6968122.jpg" alt="">
         </div>
+        
         <div class="col-sm-6" >
           <h2>Subscribe to News news News for latest updates around the world</h2>
           <div class="info" style="padding: 30px 20px 30px 20px">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque obcaecati rem minus dolor, vitae repellendus asperiores blanditiis, deleniti laboriosam exercitationem laborum fugiat necessitatibus. Rerum sapiente, officiis velit libero a facere.</p>
 
-              
+<!-- Form Starts -->
               <form form @submit.prevent="subscribe"> 
               <div class="row g-3">
                   <div class="col">
@@ -47,6 +47,7 @@
             </div>
             
             <br><br>
+
             <div class="container text-start">
               <div class="row align-items-start">
                 <div class="col-sm-6">
@@ -58,6 +59,8 @@
               </div>
             </div>
           </form>
+
+<!-- Form Ends -->
       </div>
     </div>
   </div>
@@ -80,12 +83,10 @@ export default {
 <style scoped>
 #news {
     background-color: white;
-    /* /*background: url("https://i.postimg.cc/28JSGRXS/test.jpg");/* */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* Make the image responsive */
     height: auto;
 }
 
@@ -103,7 +104,7 @@ p {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 200;
     text-align: start;
     color: black;
     padding: 15px;

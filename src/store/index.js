@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
-const bnry = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=452d05bf6c4d4555874a25c54fd797fa"
+const BNRY = "https://bnry-backend.onrender.com"
 
 export default createStore({
   state: {
@@ -19,7 +19,7 @@ export default createStore({
   },
   actions: {
     async getArticles(context) {
-      const res = await axios.get(`${bnry}`)
+      const res = await axios.get(`${BNRY}/news`)
       let { articles } = await res.data;
       if (articles) {
         context.commit('setArticles', articles)

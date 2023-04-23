@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top" :class="{ 'navbar-scrolled': scrolled }">
         <div class="container-fluid">
             <a class="nav-link" style="text-decoration: none;color: black;font-family: 'Rubik Wet Paint', cursive;" href="#">NNN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,7 +28,19 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            scrolled: false
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+        handleScroll() {
+            this.scrolled = window.scrollY > 0
+        }
+    }
 }
 </script>
 
@@ -39,11 +51,14 @@ nav {
     padding: 15px;
     border: 2px solid rgba(255, 255, 255, 0.06);
     box-shadow: 0 5px 5px rgba(21, 48, 66, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
     height: auto;
     z-index: 1;
 }
 
+.navbar-scrolled {
+    background-color: transparent;
+}
 .nav-link {
     font-family: 'Dongle', sans-serif;
     font-size: 35px;
@@ -72,4 +87,5 @@ nav {
     border: 1px solid black;
     background-color: white;
 }
+
 </style>

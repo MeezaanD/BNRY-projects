@@ -36,6 +36,9 @@
     </div>
   </div>
     </section>
+    <section id="footer">
+      <p class="footer-content">&copy;Copyright {{ thisYear }} | Designed By Meezaan Davids</p>
+    </section>
   </template>
 
 <script>
@@ -74,6 +77,12 @@ export default {
 
     return { sortedArticles, authorSearch, sortByEarliest, sortByLatest };
   },
+
+  data(){
+	return {
+		thisYear : new Date().getFullYear()
+	}
+  }
 };
 </script>
 
@@ -81,6 +90,18 @@ export default {
 #news {
     background-color: white;
     height: auto;
+}
+
+.container-fluid {
+  margin-top: 10px;
+  padding: 40px;
+}
+.row {
+  box-shadow: 0 20px 30px rgb(104, 104, 104);
+}
+img {
+  height: 27rem;
+  width: 100%;
 }
 
 h3 {
@@ -130,16 +151,21 @@ h5 {
     font-size: 24px;
     color: black;
 }
-.container-fluid {
-  margin-top: 10px;
-  padding: 40px;
+
+#footer {
+  background-color: white;
+  min-height: 10vh;
+  padding: 0;
 }
-.row {
-  box-shadow: 0 20px 30px rgb(104, 104, 104);
-}
-img {
-  height: 27rem;
-  width: 100%;
+
+.footer-content {
+text-align: center;
+color: black;
+box-shadow: 0 5px 5px rgba(21, 48, 66, 0.5);
+padding: 30px;
+font-family: 'Poppins', sans-serif;
+font-size: 25px;
+font-weight: 350;
 }
 
 </style>
