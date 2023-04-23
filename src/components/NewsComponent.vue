@@ -6,7 +6,7 @@
         <div class="container-fluid">
           <form class="d-flex me-auto" role="search" @submit.prevent>
             <i class="bi bi-search" style="font-size: 2em;margin-right: 10px;"></i>
-            <input class="form-control w-100 me-2" style="border: 3px solid black;" type="search" placeholder="Search by Author Name" aria-label="Search" v-model.trim="authorSearch"/>
+            <input class="form-control w-100 me-2" style="border: 3px solid black;" type="search" placeholder="Search Author's Name" aria-label="Search" v-model.trim="authorSearch"/>
           </form>
           <ul style="display: flex;list-style: none;gap: 5px;">
             <li>
@@ -80,12 +80,6 @@ export default {
 <style scoped>
 #news {
     background-color: white;
-    /* /*background: url("https://i.postimg.cc/28JSGRXS/test.jpg");/* */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* Make the image responsive */
     height: auto;
 }
 

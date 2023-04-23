@@ -1,6 +1,5 @@
 <template>
     <section id="about">
-      <h5>About</h5>
         <div class="container text-start">
             <div class="row align-items-start">
               <div class="col-sm-4">
@@ -20,17 +19,34 @@
               </div>
             </div>
           </div>
-          <h4>Our most established Authors</h4>
-          
-
-          
-        
+          <br>
+        <div class="container text-start">
+            <div class="row align-items-start">
+              <div class="col-sm-8">
+                <h3>Our Established Authors</h3>
+                <ul v-for="article in articles" :key="article">
+                  <li>{{ article.author }}</li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" style="height: 37rem;width: 90rem;box-shadow: 0 5px 5px rgba(21, 48, 66, 0.5);" src="https://i.postimg.cc/g2WdPYSf/lady.jpg" alt="">
+              </div>
+            </div>
+          </div>
+  
     </section>
 </template>
 
 <script>
+import { computed } from '@vue/runtime-core'
+import { useStore } from 'vuex';
 export default {
-
+    setup() {
+        const store = useStore()
+        store.dispatch("getArticles")
+        const articles = computed(() => store.state.articles)
+        return { articles }
+    },
 }
 </script>
 
@@ -53,16 +69,19 @@ h4 {
   text-align: center;
 }
 
-  h5 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
 
 p {
     font-family: 'Dongle', sans-serif;
     font-size: 26px;
     color: black;
     font-weight: 500;
+}
+
+li {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
 }
 
 </style>

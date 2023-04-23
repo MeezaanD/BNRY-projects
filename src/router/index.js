@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LandingPage from '../views/LandingPage.vue'
+import SubscribeView from '../views/SubscribeView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: LandingPage
-  }
+    name: 'subscribe',
+    component: SubscribeView
+  },
+  {
+    path: '/landing',
+    name: 'landing',
+    component: () => import('../views/LandingPageView.vue')
+  },
 ]
 
 const router = createRouter({

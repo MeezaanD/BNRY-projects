@@ -1,5 +1,5 @@
 <template>
-     <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="nav-link" style="text-decoration: none;color: black;font-family: 'Rubik Wet Paint', cursive;" href="#">NNN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -18,25 +18,17 @@
                         <a class="nav-link" href="#news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn" href="#contact">Get in touch</a>
+                        <a class="btn" href="/">Subscribe</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <Home></Home>
-    <About></About>
-    <News></News>
-    <Contact></Contact>
 </template>
-<script>
-import About from '@/components/About.vue';
-import Contact from '@/components/Contact.vue';
-import Home from '@/components/Home.vue';
-import News from '@/components/News.vue';
 
+<script>
 export default {
-    components: { Home, News, Contact, About }
+    
 }
 </script>
 
@@ -66,7 +58,6 @@ nav {
 
 .btn {
     background-color: black;
-    margin-left: 50px;
     margin-right: 30px;
     padding: 10px 20px 10px 20px;
     font-family: 'Dongle', sans-serif;
@@ -81,10 +72,4 @@ nav {
     border: 1px solid black;
     background-color: white;
 }
-
-#home {
-    min-height: 100vh;
-    position: relative;
-}
-
 </style>
