@@ -103,7 +103,7 @@ p {
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
     text-align: start;
     color: black;
@@ -116,7 +116,7 @@ h2 {
 }
 
 img {
-  height: 50rem;
+  height: 42rem;
   width: 100%;
 }
 

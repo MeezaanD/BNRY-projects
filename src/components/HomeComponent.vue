@@ -28,7 +28,7 @@ export default {};
   font-size: 23px;
   font-weight: lighter;
   top: 160px;
-  left: 100px;
+  left: 80px;
   width: 468px;
   height: 49px;
 }
@@ -36,10 +36,10 @@ export default {};
 h3 {
   position: absolute;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   top: 200px;
-  left: 100px;
+  left: 80px;
   width: 468px;
   height: 49px;
 }
@@ -54,8 +54,8 @@ h3 {
   border: 1px solid black;
   box-shadow: 0 5px 5px rgba(21, 48, 66, 0.5);
   padding: 10px 35px 50px 35px;
-  top: 470px;
-  left: 100px;
+  top: 360px;
+  left: 80px;
   height: 49px;
 }
 
